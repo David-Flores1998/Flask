@@ -1,0 +1,3220 @@
+{
+    "3D:AF:09:7F:00:01": {
+        "Name": "R1",
+        "Protocolos": [
+            "OSPF",
+            "ST"
+        ],
+        "status":"online",
+        "VLANs": {
+            "VL1": {
+                "Ports": [],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.68",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:02": {
+        "Name": "R2",
+        "Protocolos": [
+            "OSPF",
+            "ST"
+        ],
+        "status":"offline",
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.101",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:03": {
+        "Name": "R3",
+        "Protocolos": [
+            "BGP",
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0"
+                ],
+                "Plicies": [
+                    "QOS-VOICE",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.102",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:04": {
+        "Name": "R4",
+        "Protocolos": [
+            "ST",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.103",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:05": {
+        "Name": "R5",
+        "Protocolos": [
+            "BGP",
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS",
+                    "QOS-VOICE"
+                ],
+                "ET": true,
+                "IP": "192.168.10.104",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/7",
+                    "Gi0/8"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.60.5",
+                "SSH": false
+            },
+            "VL50": {
+                "Ports": [
+                    "Gi0/5"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.50.5",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:06": {
+        "Name": "R6",
+        "Protocolos": [
+            "EIGRP",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1"
+                ],
+                "Plicies": [
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.105",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:07": {
+        "Name": "R7",
+        "Protocolos": [
+            "ST",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.106",
+                "SSH": true
+            },
+            "VL99": {
+                "Ports": [
+                    "Gi0/5"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.99.7",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:08": {
+        "Name": "R8",
+        "Protocolos": [
+            "OSPF",
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT",
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.10.107",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/5"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.20.8",
+                "SSH": false
+            },
+            "VL60": {
+                "Ports": [
+                    "Gi0/5"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.60.8",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:09": {
+        "Name": "R9",
+        "Protocolos": [
+            "EIGRP",
+            "BGP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.108",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY",
+                    "QOS-VOICE"
+                ],
+                "ET": true,
+                "IP": "192.168.30.9",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:0A": {
+        "Name": "R10",
+        "Protocolos": [
+            "BGP",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2",
+                    "Gi0/3"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.10.109",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY",
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.60.10",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/7"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.50.10",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:0B": {
+        "Name": "R11",
+        "Protocolos": [
+            "EIGRP",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2",
+                    "Gi0/3"
+                ],
+                "Plicies": [
+                    "QOS-VOICE"
+                ],
+                "ET": true,
+                "IP": "192.168.10.110",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/7"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.20.11",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:0C": {
+        "Name": "R12",
+        "Protocolos": [
+            "ST",
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2",
+                    "Gi0/3"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS"
+                ],
+                "ET": true,
+                "IP": "192.168.10.111",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:0D": {
+        "Name": "R13",
+        "Protocolos": [
+            "ST",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.112",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:0E": {
+        "Name": "R14",
+        "Protocolos": [
+            "BGP",
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2",
+                    "Gi0/3"
+                ],
+                "Plicies": [
+                    "ACL-MGMT",
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.113",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/7",
+                    "Gi0/8"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.50.14",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:0F": {
+        "Name": "R15",
+        "Protocolos": [
+            "EIGRP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.114",
+                "SSH": true
+            },
+            "VL40": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6"
+                ],
+                "Plicies": [
+                    "ACL-MGMT"
+                ],
+                "ET": false,
+                "IP": "192.168.40.15",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:10": {
+        "Name": "R16",
+        "Protocolos": [
+            "OSPF",
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT",
+                    "DHCP-SNOOPING"
+                ],
+                "ET": true,
+                "IP": "192.168.10.115",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:11": {
+        "Name": "R17",
+        "Protocolos": [
+            "BGP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.116",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:12": {
+        "Name": "R18",
+        "Protocolos": [
+            "EIGRP",
+            "BGP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.117",
+                "SSH": true
+            },
+            "VL99": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/7"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.99.18",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:13": {
+        "Name": "R19",
+        "Protocolos": [
+            "OSPF",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2",
+                    "Gi0/3"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.118",
+                "SSH": true
+            },
+            "VL99": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.99.19",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/7",
+                    "Gi0/8"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.20.19",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:14": {
+        "Name": "R20",
+        "Protocolos": [
+            "ST",
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.119",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.20",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:15": {
+        "Name": "SW1",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.120",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:16": {
+        "Name": "SW2",
+        "Protocolos": [
+            "VTP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.121",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:17": {
+        "Name": "SW3",
+        "Protocolos": [
+            "LACP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "QOS-VOICE"
+                ],
+                "ET": true,
+                "IP": "192.168.10.122",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT",
+                    "DHCP-SNOOPING"
+                ],
+                "ET": false,
+                "IP": "192.168.20.23",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:18": {
+        "Name": "SW4",
+        "Protocolos": [
+            "LACP",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.123",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:19": {
+        "Name": "SW5",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.124",
+                "SSH": true
+            },
+            "VL99": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [
+                    "QOS-VOICE",
+                    "DHCP-SNOOPING"
+                ],
+                "ET": true,
+                "IP": "192.168.99.25",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:1A": {
+        "Name": "SW6",
+        "Protocolos": [
+            "LACP",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.125",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:1B": {
+        "Name": "SW7",
+        "Protocolos": [
+            "ST",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS"
+                ],
+                "ET": true,
+                "IP": "192.168.10.126",
+                "SSH": true
+            },
+            "VL40": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.40.27",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:1C": {
+        "Name": "SW8",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.127",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:1D": {
+        "Name": "SW9",
+        "Protocolos": [
+            "LACP",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.128",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [
+                    "ACL-MGMT"
+                ],
+                "ET": false,
+                "IP": "192.168.10.29",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:1E": {
+        "Name": "SW10",
+        "Protocolos": [
+            "LACP",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "QOS-VOICE",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.129",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.60.30",
+                "SSH": true
+            },
+            "VL40": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [
+                    "QOS-VOICE",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.40.30",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:1F": {
+        "Name": "SW11",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.130",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:20": {
+        "Name": "SW12",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.131",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.32",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [
+                    "QOS-VOICE"
+                ],
+                "ET": false,
+                "IP": "192.168.60.32",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:21": {
+        "Name": "SW13",
+        "Protocolos": [
+            "ST",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.132",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:22": {
+        "Name": "SW14",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING"
+                ],
+                "ET": true,
+                "IP": "192.168.10.133",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:23": {
+        "Name": "SW15",
+        "Protocolos": [
+            "ST",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.134",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.20.35",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.50.35",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:24": {
+        "Name": "SW16",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.135",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.60.36",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:25": {
+        "Name": "SW17",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.136",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:26": {
+        "Name": "SW18",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "QOS-VOICE",
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.10.137",
+                "SSH": true
+            },
+            "VL40": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.40.38",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.30.38",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:27": {
+        "Name": "SW19",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.138",
+                "SSH": true
+            },
+            "VL40": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.40.39",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.50.39",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:28": {
+        "Name": "SW20",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING"
+                ],
+                "ET": true,
+                "IP": "192.168.10.139",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:29": {
+        "Name": "SW21",
+        "Protocolos": [
+            "LACP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "ACL-MGMT",
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.10.140",
+                "SSH": true
+            },
+            "VL99": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.99.41",
+                "SSH": true
+            },
+            "VL40": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.40.41",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:2A": {
+        "Name": "SW22",
+        "Protocolos": [
+            "LACP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.141",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS"
+                ],
+                "ET": true,
+                "IP": "192.168.10.42",
+                "SSH": false
+            },
+            "VL40": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING"
+                ],
+                "ET": true,
+                "IP": "192.168.40.42",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:2B": {
+        "Name": "SW23",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.10.142",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:2C": {
+        "Name": "SW24",
+        "Protocolos": [
+            "LACP",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.143",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS"
+                ],
+                "ET": false,
+                "IP": "192.168.10.44",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:2D": {
+        "Name": "SW25",
+        "Protocolos": [
+            "ST",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING",
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.10.144",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.50.45",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:2E": {
+        "Name": "SW26",
+        "Protocolos": [
+            "ST",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.145",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": true,
+                "IP": "192.168.60.46",
+                "SSH": false
+            },
+            "VL99": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING",
+                    "ACL-MGMT"
+                ],
+                "ET": false,
+                "IP": "192.168.99.46",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:2F": {
+        "Name": "SW27",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2"
+                ],
+                "Plicies": [
+                    "QOS-VOICE"
+                ],
+                "ET": true,
+                "IP": "192.168.10.146",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.50.47",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:30": {
+        "Name": "SW28",
+        "Protocolos": [
+            "VTP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.147",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:31": {
+        "Name": "SW29",
+        "Protocolos": [
+            "LACP",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING"
+                ],
+                "ET": true,
+                "IP": "192.168.10.148",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": false,
+                "IP": "192.168.50.49",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS",
+                    "QOS-VOICE"
+                ],
+                "ET": true,
+                "IP": "192.168.60.49",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:32": {
+        "Name": "SW30",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.149",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.30.50",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.20.50",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:33": {
+        "Name": "SW31",
+        "Protocolos": [
+            "LACP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.150",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:34": {
+        "Name": "SW32",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS"
+                ],
+                "ET": true,
+                "IP": "192.168.10.151",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:35": {
+        "Name": "SW33",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS",
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.152",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT",
+                    "DHCP-SNOOPING"
+                ],
+                "ET": false,
+                "IP": "192.168.20.53",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:36": {
+        "Name": "SW34",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.153",
+                "SSH": true
+            },
+            "VL99": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING"
+                ],
+                "ET": true,
+                "IP": "192.168.99.54",
+                "SSH": false
+            },
+            "VL40": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS",
+                    "PORT-SECURITY"
+                ],
+                "ET": false,
+                "IP": "192.168.40.54",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:37": {
+        "Name": "SW35",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.10.154",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.50.55",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:38": {
+        "Name": "SW36",
+        "Protocolos": [
+            "LACP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.155",
+                "SSH": true
+            },
+            "VL40": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT",
+                    "DHCP-SNOOPING"
+                ],
+                "ET": true,
+                "IP": "192.168.40.56",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:39": {
+        "Name": "SW37",
+        "Protocolos": [
+            "LACP",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT",
+                    "DHCP-SNOOPING"
+                ],
+                "ET": true,
+                "IP": "192.168.10.156",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:3A": {
+        "Name": "SW38",
+        "Protocolos": [
+            "LACP",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.157",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS"
+                ],
+                "ET": false,
+                "IP": "192.168.60.58",
+                "SSH": false
+            },
+            "VL50": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.50.58",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:3B": {
+        "Name": "SW39",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS"
+                ],
+                "ET": true,
+                "IP": "192.168.10.158",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT",
+                    "QOS-VOICE"
+                ],
+                "ET": true,
+                "IP": "192.168.50.59",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.10.59",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:3C": {
+        "Name": "SW40",
+        "Protocolos": [
+            "ST",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS"
+                ],
+                "ET": true,
+                "IP": "192.168.10.159",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY"
+                ],
+                "ET": false,
+                "IP": "192.168.30.60",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:3D": {
+        "Name": "SW41",
+        "Protocolos": [
+            "ST",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT",
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.160",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [
+                    "ACL-MGMT",
+                    "DHCP-SNOOPING"
+                ],
+                "ET": true,
+                "IP": "192.168.20.61",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:3E": {
+        "Name": "SW42",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.161",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS",
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": false,
+                "IP": "192.168.60.62",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:3F": {
+        "Name": "SW43",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.162",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [
+                    "QOS-VOICE"
+                ],
+                "ET": true,
+                "IP": "192.168.10.63",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.30.63",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:40": {
+        "Name": "SW44",
+        "Protocolos": [
+            "VTP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT",
+                    "QOS-VOICE"
+                ],
+                "ET": true,
+                "IP": "192.168.10.163",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.10.64",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:41": {
+        "Name": "SW45",
+        "Protocolos": [
+            "ST",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING",
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.164",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT",
+                    "QOS-VOICE"
+                ],
+                "ET": false,
+                "IP": "192.168.20.65",
+                "SSH": false
+            },
+            "VL40": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING"
+                ],
+                "ET": false,
+                "IP": "192.168.40.65",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:42": {
+        "Name": "SW46",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS"
+                ],
+                "ET": true,
+                "IP": "192.168.10.165",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [
+                    "ACL-MGMT"
+                ],
+                "ET": false,
+                "IP": "192.168.50.66",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:43": {
+        "Name": "SW47",
+        "Protocolos": [
+            "ST",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING"
+                ],
+                "ET": true,
+                "IP": "192.168.10.166",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7"
+                ],
+                "Plicies": [
+                    "QOS-VOICE",
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.30.67",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:44": {
+        "Name": "SW48",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.167",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:45": {
+        "Name": "SW49",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING"
+                ],
+                "ET": true,
+                "IP": "192.168.10.168",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:46": {
+        "Name": "SW50",
+        "Protocolos": [
+            "ST",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "QOS-VOICE"
+                ],
+                "ET": true,
+                "IP": "192.168.10.169",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:47": {
+        "Name": "SW51",
+        "Protocolos": [
+            "LACP",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT",
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.10.170",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7"
+                ],
+                "Plicies": [
+                    "QOS-VOICE"
+                ],
+                "ET": false,
+                "IP": "192.168.60.71",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:48": {
+        "Name": "SW52",
+        "Protocolos": [
+            "LACP",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.171",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT",
+                    "QOS-VOICE"
+                ],
+                "ET": true,
+                "IP": "192.168.20.72",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT",
+                    "PORT-SECURITY"
+                ],
+                "ET": false,
+                "IP": "192.168.30.72",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:49": {
+        "Name": "SW53",
+        "Protocolos": [
+            "ST",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS"
+                ],
+                "ET": true,
+                "IP": "192.168.10.172",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.73",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:4A": {
+        "Name": "SW54",
+        "Protocolos": [
+            "VTP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.173",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:4B": {
+        "Name": "SW55",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.174",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING"
+                ],
+                "ET": false,
+                "IP": "192.168.20.75",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:4C": {
+        "Name": "SW56",
+        "Protocolos": [
+            "ST",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.175",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.60.76",
+                "SSH": false
+            },
+            "VL99": {
+                "Ports": [
+                    "Fa0/5"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.99.76",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:4D": {
+        "Name": "SW57",
+        "Protocolos": [
+            "VTP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.176",
+                "SSH": true
+            },
+            "VL99": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.99.77",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:4E": {
+        "Name": "SW58",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2"
+                ],
+                "Plicies": [
+                    "ACL-MGMT",
+                    "ACL-SERVERS"
+                ],
+                "ET": true,
+                "IP": "192.168.10.177",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:4F": {
+        "Name": "SW59",
+        "Protocolos": [
+            "ST",
+            "VTP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.178",
+                "SSH": true
+            },
+            "VL40": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7",
+                    "Fa0/8"
+                ],
+                "Plicies": [
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.40.79",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:50": {
+        "Name": "SW60",
+        "Protocolos": [
+            "VTP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Fa0/0",
+                    "Fa0/1",
+                    "Fa0/2",
+                    "Fa0/3"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.179",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6"
+                ],
+                "Plicies": [
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.20.80",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Fa0/5",
+                    "Fa0/6",
+                    "Fa0/7"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.30.80",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:51": {
+        "Name": "FW1",
+        "Protocolos": [
+            "OSPF",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Eth0",
+                    "Eth1",
+                    "Eth2"
+                ],
+                "Plicies": [
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.180",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Eth5",
+                    "Eth6",
+                    "Eth7"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT",
+                    "PORT-SECURITY"
+                ],
+                "ET": false,
+                "IP": "192.168.60.81",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:52": {
+        "Name": "FW2",
+        "Protocolos": [
+            "OSPF",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Eth0",
+                    "Eth1",
+                    "Eth2",
+                    "Eth3"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.181",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Eth5"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.82",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:53": {
+        "Name": "FW3",
+        "Protocolos": [
+            "OSPF",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Eth0",
+                    "Eth1",
+                    "Eth2",
+                    "Eth3"
+                ],
+                "Plicies": [
+                    "QOS-VOICE",
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.182",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Eth5",
+                    "Eth6",
+                    "Eth7",
+                    "Eth8"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING",
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": true,
+                "IP": "192.168.20.83",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:54": {
+        "Name": "FW4",
+        "Protocolos": [
+            "ST",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Eth0",
+                    "Eth1",
+                    "Eth2"
+                ],
+                "Plicies": [
+                    "QOS-VOICE"
+                ],
+                "ET": true,
+                "IP": "192.168.10.183",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:55": {
+        "Name": "FW5",
+        "Protocolos": [
+            "OSPF",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Eth0",
+                    "Eth1",
+                    "Eth2",
+                    "Eth3"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT",
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.10.184",
+                "SSH": true
+            },
+            "VL40": {
+                "Ports": [
+                    "Eth5"
+                ],
+                "Plicies": [
+                    "ACL-MGMT"
+                ],
+                "ET": false,
+                "IP": "192.168.40.85",
+                "SSH": false
+            },
+            "VL50": {
+                "Ports": [
+                    "Eth5",
+                    "Eth6",
+                    "Eth7"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.50.85",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:56": {
+        "Name": "FW6",
+        "Protocolos": [
+            "ST",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Eth0"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.185",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Eth5",
+                    "Eth6",
+                    "Eth7",
+                    "Eth8"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT",
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.30.86",
+                "SSH": false
+            },
+            "VL50": {
+                "Ports": [
+                    "Eth5",
+                    "Eth6"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT"
+                ],
+                "ET": false,
+                "IP": "192.168.50.86",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:57": {
+        "Name": "FW7",
+        "Protocolos": [
+            "OSPF",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Eth0",
+                    "Eth1"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.186",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:58": {
+        "Name": "FW8",
+        "Protocolos": [
+            "ST",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Eth0",
+                    "Eth1"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.187",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Eth5",
+                    "Eth6"
+                ],
+                "Plicies": [
+                    "QOS-VOICE"
+                ],
+                "ET": false,
+                "IP": "192.168.10.88",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:59": {
+        "Name": "FW9",
+        "Protocolos": [
+            "ST",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Eth0",
+                    "Eth1",
+                    "Eth2",
+                    "Eth3"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.188",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Eth5",
+                    "Eth6"
+                ],
+                "Plicies": [
+                    "ACL-SERVERS"
+                ],
+                "ET": true,
+                "IP": "192.168.50.89",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:5A": {
+        "Name": "FW10",
+        "Protocolos": [
+            "ST",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Eth0",
+                    "Eth1",
+                    "Eth2"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY",
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.189",
+                "SSH": true
+            },
+            "VL60": {
+                "Ports": [
+                    "Eth5",
+                    "Eth6",
+                    "Eth7"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT",
+                    "QOS-VOICE"
+                ],
+                "ET": false,
+                "IP": "192.168.60.90",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:5B": {
+        "Name": "AP1",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2",
+                    "Gi0/3"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT",
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.10.190",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/7",
+                    "Gi0/8"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.50.91",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:5C": {
+        "Name": "AP2",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2",
+                    "Gi0/3"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.191",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/7"
+                ],
+                "Plicies": [
+                    "DENY-ALL-DEFAULT",
+                    "QOS-VOICE"
+                ],
+                "ET": false,
+                "IP": "192.168.10.92",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:5D": {
+        "Name": "AP3",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1"
+                ],
+                "Plicies": [
+                    "ACL-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.192",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:5E": {
+        "Name": "AP4",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.193",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/7",
+                    "Gi0/8"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.94",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:5F": {
+        "Name": "AP5",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.194",
+                "SSH": true
+            },
+            "VL99": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/7"
+                ],
+                "Plicies": [
+                    "ALLOW-MGMT"
+                ],
+                "ET": false,
+                "IP": "192.168.99.95",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:60": {
+        "Name": "AP6",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2"
+                ],
+                "Plicies": [
+                    "DHCP-SNOOPING",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.10.195",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/7",
+                    "Gi0/8"
+                ],
+                "Plicies": [
+                    "ACL-MGMT",
+                    "ALLOW-MGMT"
+                ],
+                "ET": true,
+                "IP": "192.168.30.96",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:61": {
+        "Name": "AP7",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.196",
+                "SSH": true
+            },
+            "VL10": {
+                "Ports": [
+                    "Gi0/5"
+                ],
+                "Plicies": [
+                    "QOS-VOICE",
+                    "ACL-MGMT"
+                ],
+                "ET": false,
+                "IP": "192.168.10.97",
+                "SSH": true
+            },
+            "VL40": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/7"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.40.97",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:62": {
+        "Name": "AP8",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0"
+                ],
+                "Plicies": [
+                    "PORT-SECURITY"
+                ],
+                "ET": true,
+                "IP": "192.168.10.197",
+                "SSH": true
+            },
+            "VL40": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.40.98",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:63": {
+        "Name": "AP9",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1"
+                ],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.198",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:64": {
+        "Name": "AP10",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    "Gi0/0",
+                    "Gi0/1",
+                    "Gi0/2",
+                    "Gi0/3"
+                ],
+                "Plicies": [
+                    "QOS-VOICE",
+                    "ACL-SERVERS"
+                ],
+                "ET": true,
+                "IP": "192.168.10.199",
+                "SSH": true
+            },
+            "VL50": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6"
+                ],
+                "Plicies": [],
+                "ET": false,
+                "IP": "192.168.50.100",
+                "SSH": false
+            }
+        }
+    }
+}
